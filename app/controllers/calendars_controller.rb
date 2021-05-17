@@ -12,6 +12,7 @@ class CalendarsController < ApplicationController
     redirect_to action: :index
   end
 
+
   private
 
   def plan_params
@@ -35,6 +36,7 @@ class CalendarsController < ApplicationController
         today_plans.push(plan.plan) if plan.date == @todays_date + x
       end
 
+
       
     
     
@@ -51,6 +53,7 @@ class CalendarsController < ApplicationController
     
     
     
+
       @week_days.push(days)
     end
 
